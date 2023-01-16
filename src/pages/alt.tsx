@@ -45,7 +45,7 @@ function getRandomStat() {
     "reb",
     "plusminus",
   ];
-  let index = getRandomInt(0, 15);
+  const index = getRandomInt(0, 15);
   const stat = statList[index];
 
   return stat;
