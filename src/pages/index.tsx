@@ -21,7 +21,7 @@ function getRandomPlayers() {
     3547249, 38017620, 4, 17896097, 3, 22, 17895854, 38017704, 3547239, 30,
     17896094, 38017683, 3547251, 15, 19, 17896067, 28, 3547095, 24,
   ];
-  let index1 = getRandomInt(0, 15);
+  const index1 = getRandomInt(0, 15);
   let index2 = getRandomInt(0, 15);
   if (index1 == index2) {
     index2 = ++index2;

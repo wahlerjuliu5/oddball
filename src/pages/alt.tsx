@@ -17,7 +17,7 @@ function getRandomInt(min: number, max: number): number {
 }
 
 function getRandomPlayers() {
-  let player_id1 = getRandomInt(0, 481);
+  const player_id1 = getRandomInt(0, 481);
   let player_id2 = getRandomInt(0, 481);
   if (player_id1 == player_id2) {
     player_id2 = ++player_id2;
@@ -26,8 +26,8 @@ function getRandomPlayers() {
 }
 
 function getRandomPlayer(id1: number, id2: number) {
-  let index = getRandomInt(0, 2);
-  if ((index = 0)) {
+  const index = getRandomInt(0, 2);
+  if (index == 0) {
     return id1;
   } else {
     return id2;
